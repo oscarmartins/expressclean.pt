@@ -562,31 +562,31 @@ p.callcenter a{
 	color: #ffffff;
 	font-family: "Ubuntu";
 	font-size: 1.2em;
-	opacity: inherit;
-	
+	opacity: inherit;	
 }
 p.callcenter i{
 	color: #8ee764!important;
 	opacity: inherit!important;
 }
-
-
 h2.exp-title {
 	color: #13b1dc;
     font-size: 2em!important;
     margin: 0 0 2em 0!important;
 }
-
 h2.exp-title-green {
 	color: #8ee764!important;
 	font-size: 2em!important;
     margin: 0 0 2em 0!important;
 }
-
-
 h2.exp-title-sm{
 	font-size: 2em!important;
 }
 .img-circle {
     border-radius: 50%;
+}
+.exp-brand {
+	max-height: 3.6em;margin-top: 0.1em;
+}
+#services img.img-circle {
+	width:100px!important;
 }
