@@ -77,10 +77,11 @@ a.color-btn:hover, form.customform button.color-btn:hover {
 	opacity: 1;
 }
 nav {
-	background: none repeat scroll 0 0 #07281df0;
+	background: none repeat scroll 0 0 #223a32a3;
+	opacity: 0.8;
 }
 header {
-	border-bottom: 4px solid rgba(0, 40, 58, 0.53);
+	border-bottom: 1.5px solid rgba(0, 40, 58, 0.26);
 	position: fixed;
 	width: 100%;
 	z-index: 10;
@@ -97,7 +98,6 @@ p.logo strong {
 	font-weight: 700;
 }
 .top-nav li a {
-	border-top: 2px solid #00283a00;
 	color: #15b4df;
 	font-size: 0.80em;
 	font-weight: 600;
@@ -110,7 +110,6 @@ p.logo strong {
 	-webkit-transition: all 0.20s linear 0s;
 }
 .top-nav li a:hover, .top-nav li.active-item a {
-	background: none repeat scroll 0 0 #00283a4a;
 	border-top: 2px solid #92c500;
 	color: #92c500;
 	position: relative;
@@ -383,7 +382,7 @@ a.tab-label:hover, a.tab-label.active-btn {
 #features {
 	background: #6f9600 none repeat scroll 0 0;
 	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
-	padding: 6em 2em;
+	padding: 6.5em 2em;
 }
 #features h2 {
 	color: #fff;
@@ -516,11 +515,10 @@ footer p, footer a:visited, footer a, footer a:hover {
 @media screen and (max-width: 768px) {
   header {
   	position: relative;
-  	background-color: #07281d;
+  	/* background-color: #07281d; */
   }
   .top-nav li a {
-  	background: #010604 none repeat scroll 0 0;
-  	border-bottom: 0.2em solid;
+  margin-left: 0.2em;
   }
   #carousel .text {
   	font-size: 0.8em;
@@ -541,8 +539,13 @@ footer p, footer a:visited, footer a, footer a:hover {
 }
 @media screen and (max-width: 480px) {
   #topbar {
-  	line-height: 1.625em;
+  	/* line-height: 1.625em; */
   	text-align: center;
+  	position: fixed;
+  	left: 0;
+  	right: 0;
+  	z-index: 11;
+  	padding: 0;
   }
   .social.right {
   	float: none;
@@ -551,8 +554,8 @@ footer p, footer a:visited, footer a, footer a:hover {
   	text-align: center;
   }
   .logo{
-	margin-top: 1.4em!important;
-  }
+	margin-top: 1.7em!important;
+	}
 }
 p.callcenter {
 	color: #ffffff;
@@ -585,7 +588,9 @@ h2.exp-title-sm{
     border-radius: 50%;
 }
 .exp-brand {
-	max-height: 3.6em;margin-top: 0.1em;
+	max-height: 3.6em;
+	margin-top: 0.1em;
+	margin-bottom: 0.15em;
 }
 #services img.img-circle {
 	width:100px!important;
