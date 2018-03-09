@@ -5,7 +5,8 @@ jQuery(document).ready(function($) {
       topMenuHeight = topMenu.outerHeight() + 15,
       menuItems = topMenu.find("a"),
       scrollItems = menuItems.map(function() {
-          var item = $($(this).attr("href"));
+          var thref = $(this).attr("href").replace('/', '#').replace('.html', '')
+          var item = $(thref);
           if (item.length) {
               return item;
           }
