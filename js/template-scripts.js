@@ -5,11 +5,16 @@ jQuery(document).ready(function($) {
       topMenuHeight = topMenu.outerHeight() + 15,
       menuItems = topMenu.find("a"),
       scrollItems = menuItems.map(function() {
-          var thref = $(this).attr("href").replace('/', '#').replace('.html', '')
-          var item = $(thref);
-          if (item.length) {
-              return item;
+          var thref = $(this).attr("href").replace('/', '/#').replace('.html', '')
+          try {
+            var item = $(thref);
+            if (item.length) {
+                return item;
+            }    
+          } catch (error) {
+             return null; 
           }
+          
       });
   menuItems.click(function(e) {
       var href = $(this).attr("href"),

@@ -601,3 +601,37 @@ h2.exp-title-sm{
 #services img.img-circle {
 	width:100px!important;
 }
+
+.budgets{
+	background: none repeat scroll 0 0 #1398b9;
+	padding: 6.5em 0.5em;
+}
+.budgets h4{
+	margin: 0em 1em 1em 0em;
+    color: #7ad574;
+}
+
+.budgets p label{
+	color:#dedbdc;
+}
+
+@media screen and (max-width: 480px) {
+.budgets {
+	padding: 1em 0.5em;
+}
+h2.section-title{
+	font-size: 1.8em;
+}
+}
+
+@media screen and (max-width: 768px) {
+	.budgets {
+		padding: 1em 0.5em;
+	}
+	.nav-text {
+		color: #1398b9;
+	}
+	h2.section-title{
+		font-size: 1.8em;
+	}
+}
