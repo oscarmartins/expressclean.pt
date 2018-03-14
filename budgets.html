@@ -221,13 +221,13 @@
               e.preventDefault();
               let formData = $('form').serializeArray().map(function(x){this[x.name] = x.value; return this;}.bind({}))[0]
               let params = {
-                    REQ_CONTEX:4000,
-                    REQ_ACTION:4030,
+                    REQ_CONTEX:996699,
+                    REQ_ACTION:1000,
                     REQ_INPUTS: formData
                 }
                 axios({
                     method: 'post',
-                    url: '//orcseven.com/api/services',
+                    url: '//orcseven.com/api/orcv2',
                     data: params
                 }).then(function(res){
                     debugger;
